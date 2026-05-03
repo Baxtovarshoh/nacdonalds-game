@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background-color: #222;
+  user-select: none;
+}
+.phone {
+  border-radius: 50px;
+  border: 8px solid black;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  color: #fff;
+  width: 360px;
+  height: 667px;
+}
+.screen {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/back.jpg") top/cover no-repeat;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.notch {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  width: 135px;
+  height: 30px;
+  background: black;
+  border-radius: 15px;
+}
+.first-game {
+  width: 100%;
+  padding-top: 50px;
+  height: 100%;
+  display: flex;
+  color: black;
+  font-weight: 700;
+  font-size: 13px;
+  align-items: center;
+  flex-direction: column;
+}
+.content-logs {
+  width: 34%;
+  height: 9%;
+}
+
+.logs {
+  width: 100%;
+  height: 100%;
+}
+
+.texts {
+  width: 70%;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow:
+    3px 2px 2px #000000,
+    -3px -2px 2px #000000,
+    3px -3px 2px #000000,
+    -3px 2px 2px #000;
+  text-align: center;
+}
+.ewe {
+  width: 90%;
+  height: 78%;
+}
+.ewe > img {
+  width: 100%;
+  height: 100%;
+}
+.buts {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  width: 65%;
+  background: red;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 10px;
+  transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:active {
+    transform: translateY(1px);
+  }
+}
+.ewl {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+.ewl > img {
+  width: 38%;
+}
+
+.esd {
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  position: relative;
+  font-size: 10px;
+}
+
+.container-corusel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.corusel {
+  width: 100%;
+  height: 80%;
+  padding: 0 20px;
+  position: relative;
+  display: flex;
+}
+.esd > p {
+  position: absolute;
+  left: 20%;
+  width: 150%;
+  text-align: center;
+  padding: 0p;
+  top: 100%;
+  transform: scale(0.6) translateX(-50%);
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 63%;
+}
+.buts2 {
+  width: 100%;
+  display: flex;
+  background: #222;
+}
+.lodka > img {
+  width: 100%;
+  height: 100%;
+}
+.lodka {
+  width: 68%;
+  height: 60%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(50%) scale(0.8);
+  transition: all 0.5s ease;
+  opacity: 0.5;
+}
+
+/* центр */
+.lodka.active {
+  transform: translateX(-50%) scale(1);
+  z-index: 3;
+  opacity: 1;
+}
+
+/* левый */
+.lodka.left {
+  transform: translateX(-80%) scale(0.8);
+  z-index: 2;
+}
+
+/* правый */
+.lodka.right {
+  transform: translateX(-20%) scale(0.8);
+  z-index: 2;
+}
+.controls {
+  width: 100%;
+  height: 70px;
+  background: red;
+  display: flex;
+  justify-content: center;
+}
+.rif {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.chevron {
+  width: 50px;
+  font-size: 50px;
+}
+.tablo{
+  width: 50%;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
