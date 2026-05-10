@@ -20,24 +20,26 @@
           <div class="content-logs">
             <img class="logs" src="assets/Fifa McDo Logo_11zon.png" alt="" />
           </div>
-          <div class="main hidden">
+          <div class="main">
             <p class="texts">Tap the screen to keep the ball in the air</p>
             <div class="ewe">
               <img src="assets/Happy Meal and Toy_11zon.png" alt="" />
             </div>
             <div class="buts">
-              <div class="button">Choose your Squishmallow</div>
+              <div onclick="ChosePlayer()" class="button">
+                Choose your Squishmallow
+              </div>
             </div>
           </div>
-          <div class="main m2">
+          <div class="main m2 hidden">
             <div class="container-corusel">
               <p class="texts">Choose your Squishmallow</p>
               <div class="corusel">
                 <div class="lodka left">
-                  <img src="assets/Zayu_11zon.png" alt="" />
+                  <img src="assets/Clutch_11zon.png" alt="" />
                 </div>
                 <div class="lodka right">
-                  <img src="assets/Zayu_11zon.png" alt="" />
+                  <img src="assets/Maple_11zon.png" alt="" />
                 </div>
                 <div class="lodka active">
                   <img src="assets/Zayu_11zon.png" alt="" />
@@ -45,17 +47,21 @@
               </div>
               <div class="controls">
                 <div class="rif">
-                  <span class="chevron">
+                  <span class="chevron prev">
                     <i class="bi bi-chevron-left"></i>
                   </span>
-                  <div class="tablo">qbr</div>
-                  <span class="chevron">
+                  <div class="tablo">
+                    <span class="res">Clutch</span>
+                    <span class="res">Maple</span>
+                    <span class="res active">Zayu</span>
+                  </div>
+                  <span class="chevron next">
                     <i class="bi bi-chevron-right"></i>
                   </span>
                 </div>
               </div>
               <div class="buts2">
-                <div class="rel"></div>
+                <div onclick="startGame()" class="rel">play now ></div>
               </div>
             </div>
           </div>
@@ -71,7 +77,73 @@
             </p>
           </div>
         </div>
-        <div class="hidden"></div>
+        <div class="game-start hidden">
+          <p>Hey Kids, this is advertising</p>
+          <div class="content-logs">
+            <img class="logs" src="assets/Fifa McDo Logo_11zon.png" alt="" />
+          </div>
+          <div class="posis">
+            <div class="texts">
+              Time:
+              <br /> 
+              <span class="time">20</span>
+            </div>
+            <div class="texts">
+              Points:
+              <span class="score">3</span>
+            </div>
+          </div>
+          <div class="game-board">
+            <div class="ball">
+              <img src="assets/Layer 3.png" alt="" />
+            </div>
+            <div class="person">
+              <img src="assets/Clutch.png" alt="" />
+            </div>
+          </div>
+          <div class="saer">
+            <div class="ewl">
+              <img src="assets/Squishmallows_Logos_11zon.png" alt="" />
+            </div>
+            <div class="esd">
+              <p>
+                Toys do not move on their own. At participating McDonald's for a
+                limited time. While supplies last. One toy per Happy Meal. ©
+                2026 McDonald’s. All rights reserved. ©2026 Jazwares, LLC. ©
+                FIFA WORLD CUP 26TM
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="end-card hidden">
+          <p>Hey Kids, this is advertising</p>
+          <div class="content-logs">
+            <img class="logs" src="assets/Fifa McDo Logo_11zon.png" alt="" />
+          </div>
+          <span></span>
+          <div class="texts">
+            <p class="wek">Score: <span class="score">0</span></p>
+            <span>Nice Work</span>
+          </div>
+          <div class="buttons">
+            <div onclick="PlayAgain()" class="but2">Play Again</div>
+            <div class="but1">Learn More</div>
+          </div>
+          <div class="ewe">
+            <img src="assets/Happy Meal and Toy_11zon.png" alt="" />
+          </div>
+          <div class="ewl">
+            <img src="assets/Squishmallows_Logos_11zon.png" alt="" />
+          </div>
+          <div class="esd">
+            <p>
+              Toys do not move on their own. At participating McDonald's for a
+              limited time. While supplies last. One toy per Happy Meal. © 2026
+              McDonald’s. All rights reserved. ©2026 Jazwares, LLC. © FIFA WORLD
+              CUP 26TM
+            </p>
+          </div>
+        </div>
       </div>
       <div class="swipe"></div>
     </div>

@@ -69,9 +69,11 @@ body {
 
 .texts {
   width: 70%;
+  padding: 10px;
   font-size: 30px;
   color: rgb(255, 255, 255);
   font-weight: 700;
+  line-height: 1;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow:
     3px 2px 2px #000000,
@@ -82,7 +84,8 @@ body {
 }
 .ewe {
   width: 90%;
-  height: 78%;
+  height: 56%;
+  margin-top: 10px;
 }
 .ewe > img {
   width: 100%;
@@ -90,7 +93,7 @@ body {
 }
 .buts {
   width: 100%;
-  height: 50px;
+  height: 45px;
   display: flex;
   justify-content: center;
 }
@@ -135,7 +138,7 @@ body {
 }
 .corusel {
   width: 100%;
-  height: 80%;
+  height: 53%;
   padding: 0 20px;
   position: relative;
   display: flex;
@@ -159,7 +162,24 @@ body {
 .buts2 {
   width: 100%;
   display: flex;
-  background: #222;
+  height: 70px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.rel {
+  width: 50%;
+  height: 100%;
+  background: red;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: capitalize;
+  &:active {
+    transform: translateY(1px);
+  }
 }
 .lodka > img {
   width: 100%;
@@ -167,37 +187,34 @@ body {
 }
 .lodka {
   width: 68%;
-  height: 60%;
+  height: 90%;
   position: absolute;
   top: 20px;
   left: 50%;
   transform: translateX(50%) scale(0.8);
   transition: all 0.5s ease;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
-/* центр */
 .lodka.active {
   transform: translateX(-50%) scale(1);
   z-index: 3;
   opacity: 1;
 }
 
-/* левый */
 .lodka.left {
   transform: translateX(-80%) scale(0.8);
   z-index: 2;
 }
 
-/* правый */
 .lodka.right {
   transform: translateX(-20%) scale(0.8);
   z-index: 2;
 }
 .controls {
   width: 100%;
-  height: 70px;
-  background: red;
+  height: 50px;
+  color: white;
   display: flex;
   justify-content: center;
 }
@@ -205,16 +222,175 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .chevron {
   width: 50px;
-  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
-.tablo{
+.tablo {
   width: 50%;
   text-align: center;
+  font-size: 30px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.res {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.res.active {
+  opacity: 1;
+}
+.game-start {
+  width: 100%;
+  padding-top: 50px;
+  height: 100%;
+  display: flex;
+  color: black;
+  font-weight: 700;
+  font-size: 13px;
+  align-items: center;
+  flex-direction: column;
+}
+.posis {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.posis > .texts {
+  font-size: 24px;
+  width: 30%;
+}
+.game-board {
+  width: 100%;
+  height: 78%;
+  position: relative;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+}
+.saer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.saer > .ewl {
+  width: 70%;
+  position: absolute;
+  top: 0;
+}
+.saer > .esd {
+  bottom: -38%;
+}
+.end-card {
+  width: 100%;
+  padding-top: 50px;
+  height: 100%;
+  display: flex;
+  color: black;
+  font-weight: 700;
+  font-size: 13px;
+  align-items: center;
+  flex-direction: column;
+}
+.texts > .wek {
+  font-size: 16px;
+}
+.end-card > .texts {
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.buttons {
+  width: 100%;
+  height: 47px;
+  display: flex;
+  gap: 15px;
+  margin-top: 6px;
+  padding: 0 15px;
+}
+.but1,
+.but2 {
+  width: 50%;
+  height: 100%;
+  background: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.ball {
+  width: 13%;
+  height: 13%;
+  position: relative;
+  z-index: 1;
+  transition: all 0.1s ease-in;
+}
+.spin {
+  animation: spin 4s infinite;
+}
+.ball > img {
+  width: 100%;
+  height: 100%;
+}
+.person {
+  width: 32%;
+  bottom: 0;
+  left: 50%;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.person > img {
+  width: 100%;
+}
+.end-card > .ewe {
+  width: 95%;
+  height: 44%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .hidden {
   display: none;
+}
+
+@media (max-width: 400px) {
+  .phone{
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    border: 0;
+  }
+  .notch{
+    display: none;
+  }
+  .screen{
+    border: 0;
+    border-radius: 0;
+  }
+  .first-game{
+    padding-top: 20px;
+  }
 }
