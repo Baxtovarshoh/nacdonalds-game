@@ -83,8 +83,9 @@ body {
   text-align: center;
 }
 .ewe {
-  width: 90%;
-  height: 56%;
+  width: 100%;
+  height: 71%;
+
   margin-top: 10px;
 }
 .ewe > img {
@@ -110,6 +111,10 @@ body {
   &:active {
     transform: translateY(1px);
   }
+}
+.container-corusel > .texts {
+  padding: 0;
+  padding-top: 10px;
 }
 .ewl {
   width: 100%;
@@ -138,7 +143,7 @@ body {
 }
 .corusel {
   width: 100%;
-  height: 53%;
+  height: 80%;
   padding: 0 20px;
   position: relative;
   display: flex;
@@ -185,11 +190,15 @@ body {
   width: 100%;
   height: 100%;
 }
+.err {
+  display: flex;
+  flex-direction: column;
+}
 .lodka {
   width: 68%;
-  height: 90%;
+  height: 92%;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 50%;
   transform: translateX(50%) scale(0.8);
   transition: all 0.5s ease;
@@ -372,25 +381,239 @@ body {
     transform: rotate(360deg);
   }
 }
+.wels {
+  width: 100%;
+  height: 100%;
+}
+.fix {
+  width: 100%;
+  height: 100%;
+}
 .hidden {
   display: none;
 }
 
 @media (max-width: 400px) {
-  .phone{
+  .phone {
     width: 100%;
     height: 100vh;
     border-radius: 0;
     border: 0;
   }
-  .notch{
+  .notch {
     display: none;
   }
-  .screen{
+  .screen {
     border: 0;
     border-radius: 0;
   }
-  .first-game{
+  .first-game {
     padding-top: 20px;
+  }
+}
+@media (max-height: 400px) {
+  .phone {
+    width: 800px;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  .screen {
+    background: url("../assets/backg.png") top/cover no-repeat;
+    border-radius: 0;
+  }
+  .first-game {
+    position: relative;
+  }
+  .content-logs {
+    width: 22%;
+    height: 20%;
+    position: absolute;
+    left: 6%;
+  }
+  .first-game {
+    padding-top: 30px;
+  }
+  .texts {
+    position: absolute;
+    right: 1%;
+    font-size: 34px;
+    top: 20%;
+    width: 50%;
+  }
+  .notch {
+    display: none;
+  }
+  .main {
+    height: 84%;
+    position: relative;
+  }
+  .wels > div {
+    width: 100%;
+  }
+  .wels > .ewe {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    position: relative;
+    left: 10px;
+  }
+  .buts {
+    position: relative;
+    top: 52%;
+  }
+  .wels {
+    width: 100%;
+    order: 1;
+    height: 100%;
+    display: flex;
+    position: relative;
+    bottom: 0%;
+    flex-direction: row;
+  }
+  .first-game > .ewl {
+    position: absolute;
+    right: -5%;
+    bottom: 15%;
+    width: 40%;
+  }
+  .first-game > .esd {
+    width: 55%;
+    height: 0;
+  }
+  .first-game > .w {
+    position: absolute;
+    bottom: 12%;
+    font-size: 20px;
+    color: #fff;
+  }
+  .container-corusel {
+    flex-direction: row;
+  }
+  .container-corusel > .texts {
+    padding: 0;
+    position: absolute;
+    left: -1%;
+    top: 30%;
+    width: 40%;
+  }
+  .fix {
+    width: 160%;
+    order: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 40px;
+    position: relative;
+  }
+  .corusel {
+    width: 85%;
+    height: 75%;
+  }
+  .chevron {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  .chevron.prev {
+    left: 0;
+  }
+  .chevron.next {
+    right: 8%;
+  }
+  .buts2 {
+    height: 100%;
+    margin-top: 11%;
+    align-items: center;
+  }
+  .rel {
+    height: 20%;
+    width: 70%;
+  }
+  .game-start {
+    padding-top: 10px;
+  }
+
+  .posis {
+    flex-direction: column;
+    position: absolute;
+    align-items: end;
+  }
+  .posis > .texts {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .game-board {
+    height: 80%;
+  }
+  .err {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .saer {
+    width: 50%;
+    position: inherit;
+  }
+  .saer > .ewl {
+    position: absolute;
+    width: 40%;
+    right: -5%;
+    top: 70%;
+  }
+  .saer > .esd {
+    height: 0;
+  }
+  .game-start > p {
+    position: absolute;
+    bottom: 10%;
+    font-size: 20px;
+    color: #fff;
+  }
+  .ball {
+    width: 5%;
+  }
+  .person {
+    width: 15%;
+  }
+  .end-card {
+    padding-top: 20px;
+    position: relative;
+  }
+  .end-card > p {
+    position: absolute;
+    bottom: 8%;
+    color: white;
+   font-size: 20px; 
+  }
+  .buttons {
+    width: 40%;
+    height: 30%;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    right: 20px;
+    gap: 10px;
+  }
+  .buttons > div {
+    width: 80%;
+  }
+  .end-card > .ewe {
+    width: 55%;
+    height: 80%;
+    left: 0;
+    position: absolute;
+  }
+  .end-card > .esd {
+    width: 50%;
+    position: absolute;
+    bottom: 10%;
+    height: 0;
+  }
+  .end-card > .ewl{
+    position: absolute;
+    width: 40%;
+    right:-5%;
+    bottom: 10%;
   }
 }
